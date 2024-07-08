@@ -1,22 +1,57 @@
 .container {
+  position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+
   .containerBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
 
     video {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
+
   .containerBannerInfos {
-    position: absolute;
-    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 20px var(--padding-LR);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-text1);
 
     .containerProfile {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       img {
-        width: 100%;
+        width: 70%;
+      }
+    }
+    .containerInfos {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--padding-LR);
+
+      h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.1875rem;
       }
     }
   }
