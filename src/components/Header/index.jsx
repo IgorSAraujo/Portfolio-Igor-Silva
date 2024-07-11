@@ -1,6 +1,8 @@
 import styles from "./styles.module.scss"
+import { FaSun } from "react-icons/fa"
+import { FaMoon } from "react-icons/fa"
 
-export const Header = () => {
+export const Header = ({ toogleMode, toggleTheme }) => {
   return (
     <header className={styles.container}>
       <nav className={styles.containerNav}>
@@ -37,6 +39,12 @@ export const Header = () => {
           />
         </span>
       </nav>
+      <button
+        className={`toggleTheme ${styles.toogleButton}`}
+        onClick={() => toggleTheme()}
+      >
+        {toogleMode ? <FaSun size={21} /> : <FaMoon size={21} />}
+      </button>
     </header>
   )
 }

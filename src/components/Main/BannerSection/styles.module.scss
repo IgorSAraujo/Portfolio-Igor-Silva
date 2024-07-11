@@ -1,7 +1,8 @@
 .container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 450px;
+  box-sizing: border-box;
 
   .containerBackground {
     position: absolute;
@@ -20,6 +21,8 @@
   }
 
   .containerBannerInfos {
+    box-sizing: border-box;
+    height: 450px;
     position: relative;
     z-index: 2;
     padding: 20px var(--padding-LR);
@@ -35,10 +38,44 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      img {
-        width: 70%;
+      box-sizing: border-box;
+
+      .profilePhoto {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        transition: all 1s;
+      }
+      .primary {
+        z-index: 4;
+        opacity: 100%;
+      }
+      .secondary {
+        z-index: 3;
+        opacity: 100%;
+        clip-path: circle(50%);
+      }
+      .background {
+        z-index: 2;
+        background: radial-gradient(
+          circle,
+          rgba(189, 189, 189, 1) 35%,
+          rgba(189, 189, 189, 0.8603816526610644) 100%
+        );
+      }
+      .primary:hover {
+        opacity: 0%;
+      }
+      .primary:hover ~ .secondary {
+        scale: 120%;
+        box-shadow: 0px 0px 5px 30px var(--color-text2);
+      }
+      .primary:hover ~ .background {
+        scale: 140%;
       }
     }
+
     .containerInfos {
       width: 50%;
       display: flex;

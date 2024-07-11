@@ -19,3 +19,15 @@
   --Size-p: clamp(1rem, 0.714rem + 0.595vw, 1.25rem);
   --Size-hline: 12px;
 }
+
+.light-mode:root {
+  --bg-color01: #0b0f2c;
+  --bg-color02: #202446;
+
+  --padding-LR: clamp(0.75rem, 0.607rem + 0.714vw, 1.25rem);
+
+  //Typography
+  --color-text1: #000000;
+  --color-text2: #bdbdbd;
+  --color-text3: #ffb74d;
+}

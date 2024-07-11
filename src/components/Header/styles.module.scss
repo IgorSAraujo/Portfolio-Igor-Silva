@@ -5,6 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  padding: 10px 20px;
 
   .containerNav {
     width: 60%;
@@ -42,5 +44,23 @@
     .navButton:active {
       color: #d4e157;
     }
+  }
+  .toogleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--color-text1);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transition: all 0.5s ease;
+    position: absolute;
+    right: 40px;
+  }
+  .toogleButton:hover {
+    cursor: pointer;
+    color: rgb(48, 48, 48);
+    background-color: var(--color-text2);
   }
 }

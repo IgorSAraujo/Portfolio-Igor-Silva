@@ -16,9 +16,18 @@ export const BannerSection = () => {
       <div className={styles.containerBannerInfos}>
         <div className={styles.containerProfile}>
           <img
-            src="../../../../src/assets/04 portfolio.png"
+            className={`${styles.profilePhoto} ${styles.primary}`}
+            src="../../../../src/assets/04 Portfolio.png"
             alt="Foto de Igor com cabelo solto em fundo branco"
           />
+          <img
+            className={`${styles.profilePhoto} ${styles.secondary}`}
+            src="../../../../src/assets/09 portfolio.png"
+            alt="Foto de Igor com cabelo solto em fundo branco"
+          />
+          <span
+            className={`${styles.profilePhoto} ${styles.background}`}
+          ></span>
         </div>
         <div className={styles.containerInfos}>
           <h1 className="textBanner">{"< Igor Araujo />"}</h1>
