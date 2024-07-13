@@ -6,7 +6,7 @@ export const Header = ({ toogleMode, toggleTheme }) => {
   return (
     <header className={styles.container}>
       <nav className={styles.containerNav}>
-        <span className={`${styles.navButton} textP`}>
+        <span className={`${styles.navButton} textPb`}>
           <span className={styles.navButtonName}>Sobre Mim</span>
           <img
             className={styles.navButtonIMG}
@@ -14,7 +14,7 @@ export const Header = ({ toogleMode, toggleTheme }) => {
             alt="rastro de tinta"
           />
         </span>
-        <span className={`${styles.navButton} textP`}>
+        <span className={`${styles.navButton} textPb`}>
           <span className={styles.navButtonName}>Tecnologias</span>
           <img
             className={styles.navButtonIMG}
@@ -22,7 +22,7 @@ export const Header = ({ toogleMode, toggleTheme }) => {
             alt="rastro de tinta"
           />
         </span>
-        <span className={`${styles.navButton} textP`}>
+        <span className={`${styles.navButton} textPb`}>
           <span className={styles.navButtonName}>Projetos</span>
           <img
             className={styles.navButtonIMG}
@@ -30,7 +30,7 @@ export const Header = ({ toogleMode, toggleTheme }) => {
             alt="rastro de tinta"
           />
         </span>
-        <span className={`${styles.navButton} textP`}>
+        <span className={`${styles.navButton} textPb`}>
           <span className={styles.navButtonName}>Contatos</span>
           <img
             className={styles.navButtonIMG}

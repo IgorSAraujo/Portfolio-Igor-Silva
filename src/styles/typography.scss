@@ -15,9 +15,19 @@
   font-weight: normal;
   font-size: var(--Size-h2);
 }
+.textH3 {
+  font-family: var(--Kanit);
+  font-weight: 500;
+  font-size: var(--Size-h3);
+}
 
 .textP {
   font-family: var(--Kanit);
   font-weight: normal;
   font-size: var(--Size-p);
+}
+.textPb {
+  font-family: var(--Kanit);
+  font-weight: normal;
+  font-size: var(--Size-pB);
 }
